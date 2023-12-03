@@ -1,7 +1,5 @@
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from "@/components/ui/button";
 import InputButton from '@/components/reusables/InputButton';
 import nextImage from '@/images/profile.jpg'
 import userImage from '@/images/user.jpg'
