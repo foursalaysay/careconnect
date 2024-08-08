@@ -23,8 +23,6 @@ export default function Navbar(){
     const pathname = usePathname();
     const [isActive, setIsActive ] = useState(false);
 
-    if(pathname.includes(''))
-
     return(
         <div className="fixed w-full h-16 shadow-xl top-0 flex flex-row justify-around bg-white">
                 <div className="w-1/2 flex items-center justify-start ml-20">
@@ -32,7 +30,7 @@ export default function Navbar(){
                     <h1 className='font-poppins text-2xl'>Care<span className="text-red-400">Connect</span></h1>
                 </div>
                 <div className="w-1/2 flex items-center justify-center flex-row gap-4">
-                    <Button asChild className={`w-28 ${(!pathname.includes('') || pathname.includes('list')) ? 'bg-none' : 'bg-red-400 text-white'}`}>
+                    <Button asChild className={`w-28 ${(pathname.includes('home')) ? 'bg-red-400 text-white' : ''}`}>
                         <Link href='/'>
                             Home
                         </Link>
