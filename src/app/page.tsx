@@ -1,39 +1,28 @@
 
 import Image from 'next/image';
 import InputButton from '@/components/reusables/InputButton';
-import nextImage from '@/images/profile.jpg'
+import nextImage from '@/images/image.svg'
 import userImage from '@/images/user.jpg'
 
 
 export default function Home() {
   return (
-    <div className="w-screen h-full flex flex-row mt-20">
-      <div className="w-1/2 flex flex-col items-center justify-center mt-20">
-        <div className="rounded-full shadow-xl">
+    <div className="w-screen h-[100vh - 64px] flex flex-row mt-20 items-center justify-center">
+      <div className="w-1/2 flex flex-col items-center justify-center mt-20 gap-10">
           <Image
             src={nextImage}
-            width={300}
-            height={300} // Adjusted height
+            width={500}
+            height={500} // Adjusted height
             alt="Picture of the author"
           />
-        </div>
-        <h1 className="text-4xl font-poppins font-bold">We Care</h1>
-        <h1 className="text-4xl font-poppins font-bold">We Connect</h1>
-        <InputButton />
+       
+      </div>
+      <div className='w-1/2 justify-center items-center mt-20'>
+        <h1 className="text-7xl font-poppins font-normal">We Care</h1>
+        <h1 className="text-8xl font-poppins font-bold text-red-400 mb-10">We Connect</h1>
+          <InputButton />
       </div>
       
-      <div className="w-1/2 flex flex-col items-center justify-center">
-        
-        <div className="rounded-full border-2 border-blue-500 px-5 py-5 my-5">
-          <Image
-            src={userImage}
-            width={300}
-            height={300}
-            alt="Picture of the author"
-          />
-        </div>
-        
-      </div>
     </div>
   );
 }

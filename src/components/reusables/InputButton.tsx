@@ -44,7 +44,7 @@ export default function InputForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="w-5/6 space-y-6">
         <FormField
           control={form.control}
           name="username"
@@ -58,7 +58,7 @@ export default function InputForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Search</Button>
+        <Button className="w-full" type="submit">Search</Button>
       </form>
     </Form>
   )
