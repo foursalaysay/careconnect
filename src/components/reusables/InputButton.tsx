@@ -58,7 +58,7 @@ export default function InputForm() {
             </FormItem>
           )}
         />
-        <Button className="w-full" type="submit">Search</Button>
+        <Button variant="blue" className="w-full" type="submit">Search</Button>
       </form>
     </Form>
   )

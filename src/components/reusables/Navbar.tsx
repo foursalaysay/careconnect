@@ -32,7 +32,7 @@ export default function Navbar(){
                     <h1 className='font-poppins text-2xl'>Care<span className="text-red-400">Connect</span></h1>
                 </div>
                 <div className="w-1/2 flex items-center justify-center flex-row gap-4">
-                    <Button variant="white" asChild className={`w-28 ${(pathname.includes('')) ? 'bg-red-400 text-white' : 'bg-none'}`}>
+                    <Button asChild className={`w-28 ${(!pathname.includes('') || pathname.includes('list')) ? 'bg-none' : 'bg-red-400 text-white'}`}>
                         <Link href='/'>
                             Home
                         </Link>
@@ -42,12 +42,12 @@ export default function Navbar(){
                             List
                         </Link>
                     </Button>
-                    <Button asChild className={`w-28 ${(pathname.includes('register')) ? 'bg-red-400 text-white' : 'bg-none'}`}>
-                        <Link href='/register'>
+                    <Button asChild className={`w-28 ${(pathname.includes('signup')) ? 'bg-red-400 text-white' : 'bg-none'}`}>
+                        <Link href='/signup'>
                             Registration
                         </Link>
                     </Button>
-                    <Button asChild className={`w-28 ${(pathname.includes('login')) ? 'bg-red-400' : 'bg-none'}`}>
+                    <Button asChild className={`w-28 ${(pathname.includes('login')) ? 'bg-red-400 text-white' : 'bg-none'}`}>
                         <Link href='/login'>
                             Login
                         </Link>
