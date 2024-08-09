@@ -22,11 +22,11 @@ const ProfileCard:React.FC<ProfileCardProps> = ({ profile }) => {
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{profile.name}</div>
           <p className="text-gray-700 text-base">{profile.address}</p>
-              <li key={profile.id} className='list-none'>
-                <Button asChild className='w-64 my-2'>
-                      <Link href={'/userprofile/{profile.id}'}>See Profile</Link>
-                </Button>
-              </li>
+                <li key={profile.id} className='list-none'>
+                    <Button asChild className='w-64 my-2 bg-blue-500'>
+                          <Link href={'/userprofile/{profile.id}'} className='text-white font-medium'>See Profile</Link>
+                    </Button>
+                </li>
         </div>
       </div>
   );

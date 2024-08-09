@@ -133,7 +133,7 @@ export default function ListProfile(){
   ];
 
     return(
-        <div className="flex flex-col items-center justify-center mt-24">
+        <div className="flex flex-col items-center justify-start mt-24">
           <div className="flex flex-row gap-56 items-center mb-10">
           <h1 className='font-poppins text-5xl w-1/2'>People you may Find</h1>  
           <SearchProfile />

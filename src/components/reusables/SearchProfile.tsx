@@ -5,7 +5,7 @@ export function SearchProfile() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
       <Input className='w-96' type="email" placeholder="Search Name" />
-      <Button className='w-56'type="submit">Search</Button>
+      <Button className='w-56 bg-blue-500 text-white'type="submit">Search</Button>
     </div>
   )
 }

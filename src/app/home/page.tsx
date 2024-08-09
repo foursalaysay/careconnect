@@ -7,7 +7,7 @@ import userImage from '@/images/user.jpg'
 
 export default function Home() {
   return (
-    <div className="w-screen h-[100vh - 64px] flex flex-row mt-20 items-center justify-center">
+    <div className="w-screen h-[100vh - 64px] flex flex-row mt-28 items-center justify-center">
       <div className="w-1/2 flex flex-col items-center justify-center mt-20 gap-10">
           <Image
             src={nextImage}

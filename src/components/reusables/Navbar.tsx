@@ -1,17 +1,7 @@
 'use client'
 
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    navigationMenuTriggerStyle 
-  } from "@/components/ui/navigation-menu"
-
-
 import Image from 'next/image'
 import logoImage from '@/images/logo.png'
-
 
 import { usePathname } from "next/navigation"
 import { useState } from "react"
